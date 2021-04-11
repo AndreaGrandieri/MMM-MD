@@ -1,3 +1,9 @@
+/*
+@author: Andrea Grandieri g.andreus02@gmail.com
+*/
+
+// Posizione consigliata: "center"
+
 // Funzioni
 // - Lettura contenuto "file"
 // - Trasformazione contenuto MD in HTML
@@ -25,7 +31,9 @@ Module.register("MMM-MD", {
 		// Min interval: 45ms
 		// Ideal (default) interval: 50ms
 		// Max interval: +INFms
-		interval: 50
+		interval: 50,
+		width: "calc(100 % - 25 %)",
+		height: "500px"
 	},
 
 	/*
@@ -37,12 +45,13 @@ Module.register("MMM-MD", {
 
 	getScripts: function () {
 		// Caricamento libreria da locale
-		return ["modules/xxx/showdownjs/dist/showdown.min.js"];
+		return ["MMM-MD/showdownjs/dist/showdown.min.js"];
 	},
 
 	// Override dom generator.
 	getDom: function () {
 		// Controlli sulla configurazione	
+		// "this.config.interval"
 		var checkStatus = false;
 		if (typeof (this.config.interval) === "number") {
 			if (this.config.interval >= 45) {
@@ -54,8 +63,12 @@ Module.register("MMM-MD", {
 			this.config.interval = 50;
 		}
 
-
-
+		// "this.config.width"
+		// "this.config.height"
+		// Data la presenza di stringhe, è fondamentalmente
+		// impossibile controllare l'esetta correttezza degli input;
+		// risulta molto prossimo al futile. Per parametri sbagliati,
+		// il riscontro sarà il semplice non-rendering del modulo.
 
 		// content
 		var wrapper = document.createElement("div");
@@ -67,12 +80,18 @@ Module.register("MMM-MD", {
 		wrapper.setAttribute("class", "content");
 		bigWrapper.setAttribute("class", "container");
 		bigWrapper.setAttribute("id", "autoScroll");
-		bigWrapper.setAttribute("style", "display:inline-block; width:calc(100% - 20%); margin:0 auto; height: 500px; overflow:hidden;");
+
+		// Composizione stringa "style" (Template Literals not available)
+		var strStyle = "display:inline-block; width:";
+		strStyle += this.config.width + "; margin:0 auto; height:";
+		strStyle += this.config.height + "; overflow:hidden;";
+
+		bigWrapper.setAttribute("style", strStyle);
 
 		// Applicazione parentele
 		bigWrapper.appendChild(wrapper);
 
-		makeEverything("modules/xxx/content.md", wrapper);
+		makeEverything("MMM-MD/content.md", wrapper);
 
 		// Scroll automatico up-down per gestire overflow
 		// del contenuto in altezza (height) (*)
@@ -105,7 +124,3 @@ Module.register("MMM-MD", {
 		return bigWrapper;
 	}
 });
-
-// Parametri di configurazione
-
-////////////////////////////////////////////////////////
