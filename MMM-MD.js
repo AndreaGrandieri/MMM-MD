@@ -32,8 +32,18 @@ Module.register("MMM-MD", {
 		// Ideal (default) interval: 50ms
 		// Max interval: +INFms
 		interval: 50,
+
+		// Width (larghezza) del box del modulo
 		width: "calc(100 % - 25 %)",
-		height: "500px"
+
+		// Height (altezza) del box del modulo
+		height: "500px",
+
+		// Nome del documento contenente il contenuto
+		// MD da convertire in HTML (compresa l'estensione)
+		// IL DOCUMENTO DEVE ESSERE LOCALIZZATO ALL'INTERNO 
+		// DELLA DIR: "modules/MMM-MD/public/"
+		docname: "content.md"
 	},
 
 	/*
@@ -45,7 +55,7 @@ Module.register("MMM-MD", {
 
 	getScripts: function () {
 		// Caricamento libreria da locale
-		return ["MMM-MD/showdownjs/dist/showdown.min.js"];
+		return ["modules/MMM-MD/lib/showdownjs/dist/showdown.min.js"];
 	},
 
 	// Override dom generator.
@@ -70,6 +80,13 @@ Module.register("MMM-MD", {
 		// risulta molto prossimo al futile. Per parametri sbagliati,
 		// il riscontro sarà il semplice non-rendering del modulo.
 
+		// "this.config.docname"
+		// Data la presenza di stringhe, è fondamentalmente
+		// impossibile controllare l'esetta correttezza degli input;
+		// risulta molto prossimo al futile. Per parametri sbagliati,
+		// il riscontro sarà il riscontro di errori nella localizzazione, 
+		// lettura, conversione [...] dei contenuti del documento.
+
 		// content
 		var wrapper = document.createElement("div");
 
@@ -91,7 +108,10 @@ Module.register("MMM-MD", {
 		// Applicazione parentele
 		bigWrapper.appendChild(wrapper);
 
-		makeEverything("MMM-MD/content.md", wrapper);
+		var doc = "modules/MMM-MD/public/";
+		doc += this.config.docname;
+
+		makeEverything(doc, wrapper);
 
 		// Scroll automatico up-down per gestire overflow
 		// del contenuto in altezza (height) (*)
