@@ -53,12 +53,13 @@ npm-recursive-install
 
 ## Properties (Config Section)
 
-| Property   | Type      | Values                                                                                       | Default Value          | Mandatory  | Description                         |
-| ---------- | --------- | -------------------------------------------------------------------------------------------- | ---------------------- | ---------- | ----------------------------------- |
-| `interval` | `Integer` | Any value `>= 45` (ms)                                                                       | `50` (ms)              | `OPTIONAL` | Autoscroll velocity.                |
-| `width`    | `String`  | Any CSS valid string value                                                                   | `"calc(100 % - 25 %)"` | `OPTIONAL` | Module width.                       |
-| `height`   | `String`  | Any CSS valid string value                                                                   | `"500px"`              | `OPTIONAL` | Module height.                      |
-| `docname`  | `String`  | Path to a valid document. __The document has to be placed into: `./modules/MMM-MD/public/`__ | `"content.md"`         | `OPTIONAL` | MD document to parse markdown from. |
+| Property   | Type      | Values                                                                                       | Default Value          | Mandatory  | Description                                                                     |
+| ---------- | --------- | -------------------------------------------------------------------------------------------- | ---------------------- | ---------- | ------------------------------------------------------------------------------- |
+| `interval` | `Integer` | Any value `>= 45` (ms)                                                                       | `50` (ms)              | `OPTIONAL` | Autoscroll velocity.                                                            |
+| `staller`  | `Integer` | Any value `>= 0` (ms)                                                                        | `100` (ms)             | `OPTIONAL` | Time before restarting from __TOP__ after reaching autoscroll __BOTTOM__ limit. |
+| `width`    | `String`  | Any CSS valid string value                                                                   | `"calc(100 % - 25 %)"` | `OPTIONAL` | Module width.                                                                   |
+| `height`   | `String`  | Any CSS valid string value                                                                   | `"500px"`              | `OPTIONAL` | Module height.                                                                  |
+| `docname`  | `String`  | Path to a valid document. __The document has to be placed into: `./modules/MMM-MD/public/`__ | `"content.md"`         | `OPTIONAL` | MD document to parse markdown from.                                             |
 
 ---
 
