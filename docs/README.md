@@ -17,37 +17,37 @@ Usage:
 1. Locate: `~/MagicMirror/modules`
 2. Clone:
 
-```shell
-git clone https://www.github.com/AndreaGrandieri/MMM-MD
-```
+    ```shell
+    git clone https://www.github.com/AndreaGrandieri/MMM-MD
+    ```
 
 3. Add fragment to `~/MagicMirror/config/config.js`
 
-```js
-{
-    module: "MMM-MD",
-    position: "center",
-    config: {
-        // Alternative configuration properties are optional
+    ```js
+    {
+        module: "MMM-MD",
+        position: "center",
+        config: {
+            // Alternative configuration properties are optional
+        }
     }
-}
-```
+    ```
 
 4. Build:
 
-```shell
-cd ~/MagicMirror/modules/MMM-MD
-npm install
-```
+    ```shell
+    cd ~/MagicMirror/modules/MMM-MD
+    npm install
+    ```
 
-or
+    or
 
-```shell
-cd ~/MagicMirror
+    ```shell
+    cd ~/MagicMirror
 
-# "npm-recursive-install" needs to be installed separately 
-npm-recursive-install 
-```
+    # "npm-recursive-install" needs to be installed separately 
+    npm-recursive-install 
+    ```
 
 ---
 
