@@ -15,7 +15,7 @@ Autoscroll if content is too much.
 Usage:
 
 1. Locate: `~/MagicMirror/modules`
-2. Clone: 
+2. Clone:
 
 ```shell
 git clone https://www.github.com/AndreaGrandieri/MMM-MD
