@@ -36,14 +36,14 @@ git clone https://www.github.com/AndreaGrandieri/MMM-MD
 4. Build:
 
 ```shell
-cd `~/MagicMirror/modules/MMM-MD`
+cd ~/MagicMirror/modules/MMM-MD
 npm install
 ```
 
 or
 
 ```shell
-cd `~/MagicMirror`
+cd ~/MagicMirror
 
 # "npm-recursive-install" needs to be installed separately 
 npm-recursive-install 
