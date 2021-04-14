@@ -28,7 +28,7 @@ git clone https://www.github.com/AndreaGrandieri/MMM-MD
     module: "MMM-MD",
     position: "center",
     config: {
-        // Alternative configuration parameters are optional
+        // Alternative configuration properties are optional
     }
 }
 ```
