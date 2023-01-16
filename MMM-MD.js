@@ -145,7 +145,7 @@ Module.register("MMM-MD", {
 		window.setInterval(function () {
 
 			// Valore massimo che può assumere "bigWrapper.scrollTop"
-			maxima = bigWrapper.scrollHeight - $(bigWrapper).outerHeight() + staller;
+			maxima = bigWrapper.scrollHeight - bigWrapper.getBoundingClientRect().height + staller;
 
 			// E' ancora possibile scorrere verso il basso
 			if (i < maxima) {
