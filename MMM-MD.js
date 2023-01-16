@@ -43,7 +43,7 @@ Module.register("MMM-MD", {
 		staller: 100,
 
 		// Width (larghezza) del box del modulo
-		width: "calc(100 % - 25 %)",
+		width: "calc(100% - 25%)",
 
 		// Height (altezza) del box del modulo
 		height: "500px",
