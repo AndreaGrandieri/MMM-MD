@@ -46,7 +46,7 @@ lang: en
 {: .no_toc }
 {: .d-inline-block }
 
-<div id="projects-label-1"></div>
+<div id="legenda-labels-label-3"></div>
 {: .d-inline-block }
 
 <script type="module">
