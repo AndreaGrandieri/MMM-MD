@@ -77,7 +77,10 @@ lang: en
 > <p class="blockquote-title-fixer-purple">tl;dr</p>
 >
 > Write MD. Render it on the MagicMirror!
-> This module enables you to write whatever you want directly rendering it on your MagicMirror screen!
+
+---
+
+__This module enables you to write whatever you want directly rendering it on your MagicMirror screen!__
 
 ---
 
