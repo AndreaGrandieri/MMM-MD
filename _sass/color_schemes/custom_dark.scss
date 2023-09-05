@@ -1,0 +1,142 @@
+@import "./color_schemes/dark";
+
+.fa-file-zipper {
+    color: $blue-000; 
+}
+
+.fa-file-pdf {
+    color: $blue-000;  
+}
+
+.fa-php {
+    color: $blue-000;   
+}
+
+.fa-markdown {
+    color: $blue-000; 
+}
+
+.fa-database {
+    color: $blue-000; 
+}
+
+.fa-gear {
+    color: $blue-000; 
+}
+
+.fa-cube {
+    color: $blue-000; 
+}
+
+.fa-file-code {
+    color: $blue-000; 
+}
+
+/*******************************/
+
+// Labels custom background colors
+
+.label-relax-color {
+    background-color: #00635b !important;
+}
+
+.label-end-color {
+    background-color: #213e35 !important;
+}
+
+.label-missing-color {
+    background-color: #000000 !important;
+}
+
+.label-archived-color {
+    background-color: #342D7E !important;
+}
+
+.label-function-visibility-color {
+    background-color: #505050 !important;
+}
+
+/*******************************/
+
+// Blockquote fixing
+// Since blockquote titles in dark mode result too dark due to a bug that prevents lighter colors to opt in, we tacke the problem by manually defining lighter colors and applying them to the blockquote titles via inline css.
+// DO NOT FORGET INLINE CSS FOR <p></p>!
+// Note that with this fix you are forced not to use the default title configured in the "_config.yml" file.
+
+// Big example
+/*
+{: .motto-title } 
+> <p class="blockquote-title-fixer-purple">tl;dr</p>
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+
+{: .note-title } 
+> <p class="blockquote-title-fixer-blue">tl;dr</p>
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+
+{: .generic-purpose-highlighting-grey-lt-title } 
+> tl;dr
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+
+{: .generic-purpose-highlighting-grey-dk-title } 
+> <p class="blockquote-title-fixer-grey-dk">tl;dr</p>
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+
+{: .generic-purpose-highlighting-green-title } 
+> <p class="blockquote-title-fixer-green">tl;dr</p>
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+
+{: .warning-title } 
+> tl;dr
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+
+{: .critical-warning-title } 
+> tl;dr
+>
+> Piattaforma Open Source modulare per trasformare un classico specchio in un sistema digitale multifunzione ad interazione passiva, dove l'immaginazione è l'unico limite.
+*/
+
+// Fixing purple
+.blockquote-title-fixer-purple {
+    color: $purple-000 !important;
+}
+
+// Fixing blue
+.blockquote-title-fixer-blue {
+    color: $blue-000 !important;
+}
+
+// Fixing grey-dk
+.blockquote-title-fixer-grey-dk {
+    color: $grey-dk-000 !important;
+}
+
+// Fixing green
+.blockquote-title-fixer-green {
+    color: $green-000 !important;
+}
+
+.hr_language_selector {
+    height: 1px;
+    padding: 0;
+    margin: 2rem 0;
+    background-color: #a9b0b0;
+    border: 0;
+}
+
+.nav-list-link-override-first {
+    // Overrides the purple color of the first link in the nav list (rule defined by the theme)
+    // Hardcoded color taken from the original theme! Should be changed if the theme one changes
+    color: #959396 !important;
+}
+
+.nav-list-expander-override-first {
+    // Overrides the purple color of the first link in the nav list (rule defined by the theme)
+    // Hardcoded color taken from the original theme! Should be changed if the theme one changes
+    color: #959396 !important;
+}

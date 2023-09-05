@@ -1,0 +1,32 @@
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+//                                                             //
+//                                                             //
+// Andrea Grandieri andreagrandieri.github.io                  //
+// Copiloted by Copilot@GitHub                                 //
+//                                                             //
+//                                                             //
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+// Dizionario di mapping tra le lingue e le sigle utilizzate per indicarle
+// To add a new language, add a new entry in the dictionary following the pattern
+// Make sure that every entry is also present in the translationDictionaryForLINGUA dictionary
+export const mappingDictionaryForLanguages = {
+    "en": "English"
+}
+
+// Dizionario di traduzione della parola "Lingua" in tutte le lingue supportate
+// To add a new language, add a new entry in the dictionary following the pattern
+// Make sure that every entry is also present in the mappingDictionaryForLanguages dictionary
+export const translationDictionaryForLINGUA = {
+    "en": "Language"
+}
+
+// Set di variabili per la gestione del contenuto con id "poweredbyahref"
+export const referenceLink = "https://andreagrandieri.github.io/pages/grn-deploy-webstatic";
+export const linkToQuery = "https://raw.githubusercontent.com/AndreaGrandieri/andreagrandieri.github.io/cdn/poweredbyahref.json";
+export const defaultReferenceLink_poweredbyahref = "https://andreagrandieri.github.io/pages/it/grn-deploy-webstatic";
+
+// baseurl. Il valore di questa variabile dovrebbe essere uguale al valore dell'opzione "baseurl" nel file _config.yml. Per baseurl non presenti, in quanto non presenti nel file _config.yml, utilizzare ""
+export const baseurl = "MMM-MD";
