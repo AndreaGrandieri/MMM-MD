@@ -85,7 +85,7 @@ lang: en
 
 You just need:
 
-- Basic knowledge of Markdown [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+- Basic knowledge of Markdown: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 - Creativity
 
 Any MD syntax is supported. Multimedia is supported too!
@@ -160,11 +160,11 @@ _None._
 
 Module interface (1):
 
-![module_focus](assets/module_focus.PNG)
+[![module_focus](/MMM-MD/assets/module_focus.PNG)](/MMM-MD/assets/module_focus.PNG)
 
 Module interface (2):
 
-![module_overview](assets/module_overview.PNG)
+[![module_overview](/MMM-MD/assets/module_overview.PNG)](/MMM-MD/assets/module_overview.PNG)
 
 ---
 
